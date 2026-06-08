@@ -3,5 +3,14 @@ function aerospace_coordinate_demo
 % Define Euler angles in radians
 phi = deg2rad(10);
 theta = deg2rad(20);
+psi = deg2rad(30);
+
+alpha = deg2rad(5);
+beta = deg2rad(2);
+
+R1_mat = R1(phi);
+R2_mat = R2(theta);
+R3_mat = R3(psi);
+
 
 end
