@@ -51,9 +51,23 @@ function R = R1(phi)
         0 -sin(phi) cos(phi)];
 end
 
-function R = R2(theta)=
+function R = R2(theta)
     R = [cos(theta) 0 -sin(theta);
          0 1 0;
          sin(theta) 0 cos(theta)];
 end
 
+function R = R3(psi)
+    R = [cos(psi) sin(psi) 0;
+         -sin(psi) cos(psi) 0;
+         0 0 1];
+end
+
+function S = skew(w)
+p = w(1);
+q = w(2);
+r = w(3);
+
+S = [0 -r -q; r 0 -p; -q p 0];
+
+end
