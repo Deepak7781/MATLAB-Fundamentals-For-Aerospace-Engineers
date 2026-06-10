@@ -26,8 +26,27 @@ v = [1; 2; 3];
 
 omega_cross_v = omega_x * v;
 
+omega_cross_v_builtin = cross(omega, v);
+
+% Display results  
+disp('Direction cosine matrix C_{B<-I}:');  
+disp(C_B_I);  
+disp('Inverse transform C_{I<-B}:');  
+disp(C_I_B);  
+disp('Direction cosine matrix C_{W<-B}:');  
+disp(C_W_B);  disp('Skew symmetric matrix [omega]_x:');  
+disp(omega_x);  
+disp('omega_x * v:');  
+disp(omega_cross_v);  
+disp('cross(omega, v):');  
+disp(omega_cross_v_builtin); 
+
+
+
 end
 
 function R = R1(phi)
+
+
     
 end
