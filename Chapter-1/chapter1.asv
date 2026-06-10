@@ -46,14 +46,8 @@ disp(omega_cross_v_builtin);
 end
 
 function R = R1(phi)
+
     R = [1 0 0; 
-        0 cos(phi) sin(phi);
-        0 -sin(phi) cos(phi)];
+        0 cos(phi) sin(phi)]
+    
 end
-
-function R = R2(theta)=
-    R = [cos(theta) 0 -sin(theta);
-         0 1 0;
-         sin(theta) 0 cos(theta)];
-end
-
