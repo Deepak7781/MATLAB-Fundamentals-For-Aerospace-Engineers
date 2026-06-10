@@ -5,15 +5,12 @@ function T = isa_temperature(h)
 
     T0 = 288.15;
 
-    T = zeros(size(h));
+    T = zeros(size(h))
 
     for i = 1:length(lapseRates)
         idx = h >= layerBases(i) & h < layerBases(i+1);
         delta = h(idx) - layerBases(i);
         T(idx) = T0 + lapseRates(i) .*delta;
-        T0 = T0 + lapseRates(i).*(layerBases(i+1)-layerBases(i));
-    end
+        T0 = T0 + lap
+
 end
-
-
-isa_temperature([11000, 23000])
